@@ -1,0 +1,9 @@
+let ertek = 0
+basic.forever(() => {
+    ertek = Math.abs(input.acceleration(Dimension.Z))
+    if (ertek > 1500) {
+        basic.showIcon(IconNames.Sad)
+        basic.pause(3000)
+    }
+    basic.clearScreen()
+})

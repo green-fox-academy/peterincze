@@ -1,0 +1,17 @@
+let hatvany = 0
+let str = ""
+let osszeg = 0
+let hossz = 0
+serial.onDataReceived(serial.delimiters(Delimiters.NewLine), () => {
+    hossz = 0
+    str = serial.readLine()
+    hossz = str.length
+    hatvany = 0
+    osszeg = 0
+    for (let index = str.length - 1; index >= 0; index--) {
+        osszeg = osszeg + parseInt(str.substr(index, 1)) * Math.pow(2, hatvany)
+        hatvany = hatvany + 1
+    }
+    serial.writeNumber(osszeg)
+    basic.showNumber(osszeg)
+})

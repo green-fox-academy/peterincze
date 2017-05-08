@@ -1,0 +1,4 @@
+serial.onDataReceived(serial.readUntil(serial.readLine()), () => {
+    basic.showString(serial.readLine())
+    serial.writeLine("Perec")
+})

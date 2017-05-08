@@ -1,0 +1,10 @@
+let str = ""
+radio.onDataPacketReceived(({receivedString}) => {
+    serial.writeLine(receivedString)
+})
+serial.onDataReceived(serial.delimiters(Delimiters.NewLine), () => {
+    str = serial.readLine()
+    serial.writeLine(str)
+    radio.sendString(str)
+})
+radio.setGroup(13)

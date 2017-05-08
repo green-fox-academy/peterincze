@@ -1,0 +1,9 @@
+let szamlalo = 0
+szamlalo = 4
+basic.showNumber(szamlalo)
+szamlalo = 5
+basic.showNumber(szamlalo)
+szamlalo = 6
+basic.showNumber(szamlalo)
+szamlalo = 7
+basic.showNumber(szamlalo)

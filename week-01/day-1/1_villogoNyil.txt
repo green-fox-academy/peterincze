@@ -1,0 +1,5 @@
+basic.forever(() => {
+    basic.showArrow(ArrowNames.North)
+    basic.clearScreen()
+    basic.pause(1000)
+})

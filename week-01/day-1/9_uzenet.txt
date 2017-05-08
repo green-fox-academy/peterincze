@@ -1,0 +1,11 @@
+let x = 0
+input.onButtonPressed(Button.A, () => {
+    radio.sendString("1")
+})
+radio.onDataPacketReceived(({receivedString}) => {
+    basic.showString(receivedString)
+    x = parseInt(receivedString) + 1
+    basic.showString("" + receivedString + x)
+    radio.sendString("" + receivedString + x)
+})
+radio.setGroup(72)
