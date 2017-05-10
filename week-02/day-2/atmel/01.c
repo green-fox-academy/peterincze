@@ -36,4 +36,8 @@ int main(void)
 		PORTB &=  ~(1 << PORTB5);
 		_delay_ms(500);	// Here the CPU will wait for 500ms
 	}
+<<<<<<< HEAD
 }
+=======
+} 
+>>>>>>> 1a2ee5ac04bd4a06e0aa58fadb5dbe92ab92726f
