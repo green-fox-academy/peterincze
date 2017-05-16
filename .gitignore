@@ -12,6 +12,10 @@
 [Dd]ebug/
 [Rr]elease/
 
+*.atsln
+*.xml
+*.cproj
+
 #Build Results
 *.o
 *.d
