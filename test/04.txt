@@ -1,0 +1,14 @@
+What baud rate have to be set on the terminal program on the PC? [1p]
+
+Your answer: What i need. If I need high speed communication i set for example 115200 if i don't need, high speed communication I set for example 9600.
+
+
+What is the bit time at that baud rate? [1p]
+
+Your answer: If I use 9600 that 9600 bit/sec data trans.
+
+
+What is the bit sequence on the MCU's TX pin when an 'a' character is sent? [2p]
+
+Your answer: The bit's ate read right-to-ltft, for example in '1100' the first bit is '0', the last bit is '1'.
+
