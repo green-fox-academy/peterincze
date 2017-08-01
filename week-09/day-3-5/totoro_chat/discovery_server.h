@@ -1,0 +1,6 @@
+#ifndef DISCOVERY_SERVER_H_INCLUDED
+#define DISCOVERY_SERVER_H_INCLUDED
+
+void thread_discovery_server()
+
+#endif // DISCOVERY_SERVER_H_INCLUDED
