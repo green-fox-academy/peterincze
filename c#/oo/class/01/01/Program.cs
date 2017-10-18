@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// Create a new instace of the Student class and set it's name to "John" and
+// it's age to 21
+
 namespace _01
 {
 	class Student
