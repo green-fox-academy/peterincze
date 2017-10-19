@@ -14,23 +14,22 @@ namespace _05
 	{
 		public string name;
 		public uint age;
-		public void StudentPar(string name, uint age)
+		public Student(string name, uint age)
 		{
 			this.age = age;
 			this.name = name;
 		}
-		public static void Great(string name)
+		public static string Greet(string name)
 		{
-			Console.WriteLine("Hello my name is: {0}", name);
+			return "Hello my name is: " + name;
 		}
 	}
 	class Program
 	{
 		static void Main(string[] args)
 		{
-			Student john = new Student();
-			john.StudentPar("John", 21);
-			Student.Great(john.name);
+			Student john = new Student("John", 42);
+			Console.WriteLine("{0}", Student.Greet(john.name));
 			Console.ReadKey();
 		}
 	}
